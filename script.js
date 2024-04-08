@@ -63,3 +63,29 @@ function sorteio(){
     sorteio.sort((a,b)=> a-b);
     document.getElementById("teste").innerHTML = sorteio
 }
+
+//Desestruturação
+
+const usuario = {
+    nome: "Lisan Al-Gaib",
+    local: "Arrakis",
+    idade: 20
+};
+
+//Sem desestruturação
+console.log(`Nome e local: ${usuario.nome} e ${usuario.local}`)
+
+//Com desestruturação
+let {Nome, Local} = usuario;
+console.log(`${Nome} e ${Local}`)
+
+//Arrow Function
+let item = ["Duna", "Messias de Duna", "Filhos de Duna","Imperador de Duna", "Hereges de Duna", "Herdeiros de Duna"];
+
+item.forEach(function(item){
+    console.log(item)
+})
+
+let items1 = ["Duna", "Messias de Duna", "Filhos de Duna","Imperador de Duna", "Hereges de Duna", "Herdeiros de Duna"];
+
+

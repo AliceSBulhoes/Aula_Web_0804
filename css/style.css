@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aliceblue;
+}
+#sorteio{
+    display: flex;
+    flex-direction: column;
+    height: 159px;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    margin: 300px;
+}
+#sorteio button{
+    height: 50px;
+    padding: 10px;
+    border-radius: 15px;
+    border-color: black;
+    background-color: rgb(173, 213, 245);
+}
