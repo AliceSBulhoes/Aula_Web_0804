@@ -49,3 +49,17 @@ for(aluno of lista_alunos){
     let media = (aluno.nota[0] + aluno.nota[1])/ 2;
     console.log(`A média do aluno ${aluno.nome} é ${media}`)
 }
+
+//Você precisa desnvolver um algoritmo que faça um sorteio de bingo
+function sorteio(){
+    const sorteio = [];
+
+    while(sorteio.length < 6){
+        let num1 = Math.ceil(Math.random() * 60);
+        if(!sorteio.includes(num1)){
+            sorteio.push(num1);
+        }
+    }
+    sorteio.sort((a,b)=> a-b);
+    document.getElementById("teste").innerHTML = sorteio
+}
